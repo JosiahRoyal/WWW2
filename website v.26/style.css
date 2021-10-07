@@ -1,0 +1,89 @@
+body{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: black;
+  font-family:Helvetica;
+  background-color: white;
+}
+
+h1{
+  font-size:6vw;
+}
+
+p{
+  font-size:2vw;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+button {
+  font-size:2vw;
+  font-weight: 400;
+  color: black;
+  background: white;
+  border: none;
+}
+a:hover{
+  color: blue;
+}
+
+.centergif{
+  text-align: center;
+  padding-top: 15%;
+}
+
+.center{
+  text-align: center;
+}
+
+.centerjpg{
+  text-align: center;
+  padding-top: 5%;
+}
+
+.pos{
+  position: absolute;
+}
+
+.text{
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: justify;
+}
+
+.link{
+  padding-left: 5%;
+  padding-right: 5%;
+  color: black;
+  text-decoration: none;
+}
+
+.DownloadLink{
+  text-align: center;
+  font-style: italic;
+  color: black;
+  text-decoration: none;
+}
+
+.DownloadLink:hover{
+  color: blue;
+}
+
+.fade-in{
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

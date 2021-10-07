@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Josiah Royal</title>
+    <link rel="shortcut icon" href="64x64.ico">
+    <link rel="apple-touch-icon" href="64x64.png">
+    <link rel="icon" sizes="64x64" href="64x64.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript">
+
+    var random_images_array_gif = ["22_dellScreenSaver.gif", "22_directionalBlue90.gif", "22_inkBleed.gif", "22_Lens.gif", "22_turbulentNoise.gif", "22_360.gif", "22_fall.gif"];
+    var random_images_array = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg", "img6.jpg", "img7.jpg", "img8.jpg", "img9.jpg", "img10.jpg", "img11.jpg", "img12.jpg", "img13.jpg", "img14.jpg", "img15.jpg", "img16.jpg", "img17.jpg", "img18.jpg", "img19.jpg"];
+    var random_images_array_color = ["blue.jpg", "gray.jpg", "green.jpg", "purple.jpg", "red.jpg", "silver.jpg", "yellow.jpg"];
+
+    function getRandomImage(imgAr, path) {
+    path = path || 'images/'; // default path here
+    var num = Math.floor( Math.random() * imgAr.length );
+    var img = imgAr[ num ];
+    var imgStr = '<img src="' + path + img + '" width="20%" >';
+    document.write(imgStr); document.close();
+}
+    </script>
+    <style type="text/css">
+
+    #Moonbase:hover{
+      color: red;
+    }
+
+    #videoRadio:hover{
+      color: #6441a5;
+    }
+
+    #Twitter:hover{
+      color: #00acee;
+    }
+
+    #Instagram:hover{
+      color: #feda77;
+    }
+
+    body{
+      padding: 0;
+      margin: 0;
+      border: 0;
+      color: black;
+      font-family:Helvetica;
+      background-color: white;
+    }
+
+    h1{
+      font-size:6vw;
+    }
+
+    p{
+      font-size:2vw;
+      text-align: center;
+      padding-left: 20%;
+      padding-right: 20%;
+    }
+
+    button {
+      font-size:2vw;
+      font-weight: 400;
+      color: black;
+      background: white;
+      border: none;
+    }
+    a:hover{
+      color: blue;
+    }
+
+    .centergif{
+      text-align: center;
+      padding-top: 15%;
+    }
+
+    .center{
+      text-align: center;
+    }
+
+    .centerjpg{
+      text-align: center;
+      padding-top: 5%;
+      opacity: 1;
+      animation-name: fadeInOpacity;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 3s;
+    }
+
+    .pos{
+      position: absolute;
+    }
+
+    .text{
+      padding-left: 5%;
+      padding-right: 5%;
+      text-align: justify;
+    }
+
+    .link{
+      padding-left: 5%;
+      padding-right: 5%;
+      color: black;
+      text-decoration: none;
+    }
+
+    .DownloadLink{
+      text-align: center;
+      font-style: italic;
+      color: black;
+      text-decoration: none;
+    }
+
+    .DownloadLink:hover{
+      color: blue;
+    }
+    .fade-in{
+      opacity: 1;
+      animation-name: fadeInOpacity;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 3s;
+    }
+
+    @keyframes fadeInOpacity{
+      0%{
+        opacity: 0;
+      }
+      100%{
+        opacity: 1;
+      }
+    }
+
+    </style>
+  </head>
+  <body class="">
+    <div class="centergif">
+      <script type="text/javascript">getRandomImage(random_images_array_gif);</script>
+    </div>
+    <div class="centerjpg">
+      <script type="text/javascript">getRandomImage(random_images_array_color);</script>
+    </div>
+    <div class="centerjpg">
+      <script type="text/javascript">getRandomImage(random_images_array);</script>
+    </div>
+        <div class="centerjpg">
+         <h1><a href="mailto:josiah@josiahroyal.com" class="link">Contact</a></h1>
+         <h1><a id="Moonbase" target="_blank" href="http://reachmoonbase.com/" class="link">MOONBASE</a></h1>
+         <h1><a id="Twitter" target="_blank" href="https://twitter.com/RoyalJosiah" class="link">Twitter</a></h1>
+         <h1><a id="Instagram" target="_blank" href="https://instagram.com/josiahroyal" class="link">Insta</a></h1>
+         <h1><a href="index.html" class="link">Reload</a></h1>
+         <h1><a href="archive.html" class="link">Archive</a></h1>
+       </div>
+  </body>
+</html>
