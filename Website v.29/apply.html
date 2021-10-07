@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+    .item1 { grid-area: item1; }
+    .item2 { grid-area: item2; }
+
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'item1 item1'
+        'item2 item2'
+        ;
+      grid-gap: 10px;
+      background-color: #white;
+      padding: 10px;
+    }
+
+    .grid-container > div {
+      background-color: rgba(255, 255, 255, 1);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+
+    .indexTop{
+      padding-top: 15%;
+    }
+
+    .center{
+      text-align: center;
+    }
+
+    .space{
+      padding: 20px;
+    }
+
+    #txt{
+      font-size: 15px;
+      padding-left: 20%;
+      padding-right: 20%;
+    }
+
+    a{
+      text-decoration: none;
+      color: black;
+    }
+
+    a:hover{
+      color: gray;
+    }
+
+    </style>
+    <link rel="shortcut icon" href="64x64.ico">
+    <link rel="apple-touch-icon" href="64x64.png">
+    <link rel="icon" sizes="64x64" href="64x64.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>Josiah</title>
+  </head>
+  <body>
+    <div class="indexTop">
+
+    </div>
+<div class="grid-container">
+  <div class="item1">Apply</div>
+  <div id="txt" class="item2"><p>Production is always happening whether it's a feature length film, a animated short, a music video etc. There is a need for Actors, Actress, Composers, Cinematographers, Grips, VFX etc. This form enters you into a database of talent for up coming projects. Complete the application by entering your Full Name, Email, Region and a Message. Include applicable links to past experience and social media. If you would be perfect for a project you will recive a email.</p></div>
+</div>
+<div class="center">
+<form class="contact-form" action="apply.php" method="post">
+  <input type="text" name="name" placeholder="Full Name">
+  <div class="space"></div>
+  <input type="text" name="mail" placeholder="Email">
+  <div class="space"></div>
+  <input type="text" name="region" placeholder="Region">
+  <div class="space"></div>
+  <textarea name="message" placeholder="Message" rows="10" cols="17"></textarea>
+  <div class="space"></div>
+  <button type="submit" name="submit">SEND</button>
+</form>
+</div>
+<div class="indexTop">
+
+</div>
+  </body>
+</html>
